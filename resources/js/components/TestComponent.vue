@@ -18,7 +18,6 @@ export default {
         test() {
             let request = {
 
-
             }
         },
     }
