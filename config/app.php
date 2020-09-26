@@ -134,7 +134,7 @@ return [
     |
     */
 
-    'providers' => [
+    'providers' => array(
 
         /*
          * Laravel Framework Service Providers...
@@ -170,6 +170,7 @@ return [
         /*
          * Application Service Providers...
          */
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -177,7 +178,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
 
-    ],
+
+    ),
 
     /*
     |--------------------------------------------------------------------------
