@@ -39,12 +39,11 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
-            \Laravel\Passport\Http\Middleware\CreateFreshApiToken::class,
+
         ],
 
         'api' => [
-            'driver' => 'passport',
-//            'driver' => 'token',
+            'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
         ],
