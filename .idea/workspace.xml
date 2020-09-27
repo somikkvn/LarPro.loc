@@ -10,18 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83a39249-d6e5-47b1-90c5-cc4f3b5b5151" name="Default Changelist" comment="LarPro.loc commit3">
-      <change afterPath="$PROJECT_DIR$/resources/views/apiposts.blade.php" afterDir="false" />
+    <list default="true" id="83a39249-d6e5-47b1-90c5-cc4f3b5b5151" name="Default Changelist" comment="LarPro.loc 27.09.20">
+      <change beforePath="$PROJECT_DIR$/.idea/myFirstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myFirstProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/PageComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ApipostsComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/guestbook.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guestbook.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +137,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
       <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hghkVOziwtMLDPMGykJKuU4B4w" />
@@ -208,7 +206,8 @@
       <workItem from="1601102135074" duration="10072000" />
       <workItem from="1601135358834" duration="16988000" />
       <workItem from="1601193410319" duration="3412000" />
-      <workItem from="1601212492370" duration="5928000" />
+      <workItem from="1601212492370" duration="6571000" />
+      <workItem from="1601226450795" duration="7815000" />
     </task>
     <task id="LOCAL-00001" summary="LarPro.loc commit1">
       <created>1601018081037</created>
@@ -231,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601135616955</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="LarPro.loc 27.09.20">
+      <created>1601218872444</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601218872444</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +262,8 @@
     <MESSAGE value="LarPro.loc commit1" />
     <MESSAGE value="LarPro.loc commit2" />
     <MESSAGE value="LarPro.loc commit3" />
-    <option name="LAST_COMMIT_MESSAGE" value="LarPro.loc commit3" />
+    <MESSAGE value="LarPro.loc 27.09.20" />
+    <option name="LAST_COMMIT_MESSAGE" value="LarPro.loc 27.09.20" />
   </component>
   <component name="WindowStateProjectService">
     <state x="306" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601194497917">
@@ -275,6 +282,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1601017646220" />
+    <state x="465" y="243" key="Github.CreateGistDialog" timestamp="1601227748378">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="465" y="243" key="Github.CreateGistDialog/0.0.1280.680@0.0.1280.680" timestamp="1601227748378" />
     <state x="520" y="239" key="Github.ShareDialog" timestamp="1601018109603">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -283,14 +294,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1601148947336" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1601213855871">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1601226514381">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1601213855871" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1601135639115">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1601226514381" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1601218895677">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601135639115" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601218895677" />
     <state x="443" y="247" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601135572642">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
