@@ -5,16 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Apiposts</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <title>Document</title>
+
 </head>
 <body>
 
-<div class="container" id="app">
-    <page-component></page-component>
+<div id="app">
+       <apiposts-component></apiposts-component>
 </div>
 
 <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>
-
