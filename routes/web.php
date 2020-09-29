@@ -26,6 +26,8 @@ Route::get('/axios_login', function () {
     return view('axios_login');
 });
 
-Route::get('/axiosRegister', function () {
-    return view('axiosRegister');
-});
+//Route::get('/axiosRegister', function () {
+//    return view('axiosRegister');
+//});
+
+Route::get('/axiosRegister','AxiosController@test');

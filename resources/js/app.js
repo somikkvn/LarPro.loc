@@ -16,6 +16,8 @@ Vue.component('modal1-component',require('./components/modal/Modal1Component').d
 
 Vue.component('modal2-component',require('./components/modal/Modal2Edit').default);
 
+Vue.component('modal3-component',require('./components/modal/Modal3Del').default);
+
 const app = new Vue({
 
     el: '#app',

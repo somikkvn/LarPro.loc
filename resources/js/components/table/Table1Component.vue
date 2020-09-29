@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row mt-3">
             <div class="col-lg-6">
-                <h3 class="text-info">Register Users</h3>
+                <h3 class="text-dark">Register Users</h3>
             </div>
             <div class="col-lg-6">
-                <button class="btn btn-info float-right" @click="showModal">
+                <button class="btn btn-success float-right" @click="showModal">
                    Add New User
                 </button>
             </div>
@@ -21,7 +21,7 @@
             <div class="col-lg-12">
                 <table class="table table-bordered table-striped">
                     <thead>
-                    <tr class="text-center bg-info text-light" >
+                    <tr class="text-center bg-secondary text-light" >
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
@@ -30,12 +30,12 @@
                     </tr>
                     </thead>
                     <tbody align="center">
-                    <tr>
+                    <tr class="text-light">
                         <td>1</td>
                         <td>Vasyl</td>
                         <td>Vasyl@gmail.com</td>
-                        <td><a href="#" class="text-success" @click="EditModal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> </td>
-                        <td><a href="#" class="text-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></a> </td>
+                        <td><a href="#" class="text-info" @click="EditModal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> </td>
+                        <td><a href="#" class="text-danger" @click="DelModal"><i class="fa fa-trash-o" aria-hidden="true"></i></a> </td>
                     </tr>
                     </tbody>
 
@@ -47,6 +47,7 @@
 
         <modal1-component class="modal1" v-if="showAddModal" @closeModal="closeModal"></modal1-component>
         <modal2-component class="modal1" v-if="showEditModal" @closeEditModal="closeEditModal"></modal2-component>
+        <modal3-component class="modal1" v-if="showDelModal" @closeDelModal="closeDelModal"></modal3-component>
 
 
     </div>
@@ -59,7 +60,8 @@ export default {
             errorMsg: false,
             successMsg: false,
             showAddModal: false,
-            showEditModal: false
+            showEditModal: false,
+            showDelModal: false,
         }
     },
 
@@ -75,6 +77,12 @@ export default {
         },
         closeEditModal(){
             this.showEditModal = false;
+        },
+        DelModal() {
+            this.showDelModal = true;
+        },
+        closeDelModal(){
+            this.showDelModal = false;
         }
     }
 }

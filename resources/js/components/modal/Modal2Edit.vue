@@ -16,7 +16,7 @@
                            <input type="email" name="email" class="form-control form-control-lg" placeholder="Email">
                        </div>
                        <div class="form-group">
-                           <button class="btn btn-dark btn-block btn-lg">
+                           <button class="btn btn-info btn-block btn-lg">
                                &nbsp;&nbsp;Update User
                            </button>
                        </div>
