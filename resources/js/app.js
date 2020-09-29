@@ -8,6 +8,14 @@ Vue.component('index-component', require('./components/pages/posts/IndexComponen
 
 Vue.component('apiposts-component',require('./components/ApipostsComponent.vue').default);
 
+Vue.component('axios-component',require('./components/Axios_LoginComponent.vue').default);
+
+Vue.component('table1-component',require('./components/table/Table1Component.vue').default);
+
+Vue.component('modal1-component',require('./components/modal/Modal1Component').default);
+
+Vue.component('modal2-component',require('./components/modal/Modal2Edit').default);
+
 const app = new Vue({
 
     el: '#app',
