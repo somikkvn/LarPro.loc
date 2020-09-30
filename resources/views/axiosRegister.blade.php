@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-    Register
+    Axios Login
 @endsection
 
 @section('main_content')

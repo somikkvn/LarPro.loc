@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,16 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83a39249-d6e5-47b1-90c5-cc4f3b5b5151" name="Default Changelist" comment="LarPro.loc 29.09.20">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/modal/Modal3Del.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/modal/Modal1Component.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/modal/Modal1Component.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/modal/Modal2Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/modal/Modal2Edit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/table/Table1Component.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/table/Table1Component.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/axiosRegister.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/axiosRegister.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/axios_login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/axios_login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +154,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -339,6 +338,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601382050130" />
+    <state x="348" y="73" width="585" height="534" key="find.popup" timestamp="1601474784882">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="348" y="73" width="585" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1601474784882" />
     <state x="443" y="247" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601135572642">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

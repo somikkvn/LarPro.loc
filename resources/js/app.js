@@ -18,6 +18,8 @@ Vue.component('modal2-component',require('./components/modal/Modal2Edit').defaul
 
 Vue.component('modal3-component',require('./components/modal/Modal3Del').default);
 
+Vue.component('coin-component',require('./components/test/CoinComponent').default);
+
 const app = new Vue({
 
     el: '#app',
