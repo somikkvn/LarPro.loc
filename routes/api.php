@@ -11,11 +11,6 @@ Route::apiResource('post', API\PostController::class);
 
 Route::apiResource('apipost', API\ApipostController::class);
 
-
-//Route::post('axios_test', function (){
-//    return 'Hello';
-//});
-
 Route::group([
     'prefix' => 'auth'
 ], function () {
@@ -26,4 +21,6 @@ Route::group([
     Route::post('me', 'AuthController@me');
 });
 
-
+Route::group(['prefix' => '/v1', 'namespace' => 'Api\V1', 'as' => 'api.'], function () {
+    Route::resource('companies', 'CompaniesController', ['except' => ['create', 'edit']]);
+});

@@ -2,8 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
+
     public function run()
     {
 

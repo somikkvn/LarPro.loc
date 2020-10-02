@@ -3,31 +3,24 @@
 Route::get('/', function () {
     return view('index');
 });
-
 Route::get('/task', function () {
     return view('task');
 });
-
 Route::post('/guestbook/comment','MainController@guestbook_comment');
-
 Route::get('/guestbook','MainController@guest')->name('guestbook');
-
 Route::get('logout','Auth\LoginController@logout');
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/apiposts', function () {
     return view('apiposts');
 });
-
-Route::get('/axios_login', function () {
+Route::get('/test', function () {
     return view('axios_login');
 });
+Route::get('/modal','AxiosController@test');
+//Route::post('/contact','ContactController@contact');
+Route::get('/contact', function () {
+    return view('contact');
+});
 
-//Route::get('/axiosRegister', function () {
-//    return view('axiosRegister');
-//});
-
-Route::get('/axiosRegister','AxiosController@test');
+Route::get('/seed','SeedController@run');

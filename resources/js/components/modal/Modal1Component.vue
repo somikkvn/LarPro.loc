@@ -17,7 +17,7 @@
                        </div>
                        <div class="form-group">
                            <button class="btn btn-success btn-block btn-lg">
-                               &nbsp;&nbsp;Add New User
+                               &nbsp;&nbsp;Add new User
                            </button>
                        </div>
                    </form>

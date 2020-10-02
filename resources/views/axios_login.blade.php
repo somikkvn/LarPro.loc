@@ -1,10 +1,20 @@
 @extends('layout')
 @section('title')
-    Register
+    Axios Login
 @endsection
 
 @section('main_content')
-
-<coin-component></coin-component>
+    <h3>
+        <a href="\modal">Modal</a><br>
+        <a href="\apiposts">Api</a><br>
+        <a href="\contact">Contact</a>
+    </h3>
 
 @endsection
+
+
+
+
+
+
+

@@ -18,7 +18,11 @@ Vue.component('modal2-component',require('./components/modal/Modal2Edit').defaul
 
 Vue.component('modal3-component',require('./components/modal/Modal3Del').default);
 
+Vue.component('auth-modal',require('./components/modal/AuthModal').default);
+
 Vue.component('coin-component',require('./components/test/CoinComponent').default);
+
+Vue.component('login-ajax',require('./components/modal/LoginAjax').default);
 
 const app = new Vue({
 

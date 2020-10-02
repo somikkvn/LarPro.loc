@@ -5,7 +5,7 @@
 
 @section('main_content')
 
-{{--    <index-component></index-component>--}}
-<apiposts-component></apiposts-component>
+    <index-component></index-component>
+    <coin-component></coin-component>
 
 @endsection

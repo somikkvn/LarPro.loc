@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+
     public function __construct()
     {
         $this->middleware('auth:api', ['except' => ['login', 'registration']]);
@@ -48,12 +49,10 @@ class AuthController extends Controller
         return response()->json(['message' => 'Successfully logged out']);
     }
 
-
     public function refresh()
     {
         return $this->respondWithToken(auth()->refresh());
     }
-
 
     protected function respondWithToken($token)
     {

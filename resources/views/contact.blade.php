@@ -1,9 +1,12 @@
+
 @extends('layout')
 @section('title')
-    Axios Login
+   Форма
 @endsection
 
 @section('main_content')
 
-<table1-component></table1-component>
+{{--    <auth-modal></auth-modal>--}}
+    <login-ajax></login-ajax>
+
 @endsection

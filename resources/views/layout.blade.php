@@ -34,6 +34,7 @@
             <li><a href="\register">Register</a></li>
             <li><a href="\guestbook">Guestbook</a></li>
             <li><a href="\logout">Logout</a></li>
+            <li><a href="\test">Test</a></li>
         </ul>
     </div>
 
@@ -44,7 +45,6 @@
         <br>
         @yield('main_content')
     </div>
-
     <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

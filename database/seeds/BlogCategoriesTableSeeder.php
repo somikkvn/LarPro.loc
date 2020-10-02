@@ -2,10 +2,11 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class BlogCategoriesTableSeeder extends Seeder
 {
+
     public function run()
     {
-
+        //
     }
 }
