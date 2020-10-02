@@ -1,11 +1,17 @@
-
 @extends('layout')
 @section('title')
-   Форма
+    Axios Login
 @endsection
 
 @section('main_content')
 
-    <login-ajax></login-ajax>
+    <h1>123</h1>
 
 @endsection
+
+
+
+
+
+
+

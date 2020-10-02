@@ -14,7 +14,7 @@ Route::apiResource('apipost', API\ApipostController::class);
 Route::group([
     'prefix' => 'auth'
 ], function () {
-    Route::post('login', 'AuthController@login');
+    Route::post('login', 'AuthController@login')->name('api-login');
     Route::post('registration', 'AuthController@registration');
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
