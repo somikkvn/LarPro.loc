@@ -17,10 +17,8 @@ Auth::routes();
 Route::get('/apiposts', function () {
     return view('apiposts');
 });
-Route::get('/test', function () {
-    return view('axios_login');
-});
-Route::get('/modal','AxiosController@test');
+
+Route::get('/test','AxiosController@test');
 //Route::post('/contact','ContactController@contact');
 
 Route::get('/contact', function () {

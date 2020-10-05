@@ -9,6 +9,6 @@ class AxiosController extends Controller
 {
     public function test()
     {
-        return view('axiosRegister');
+        return view('axios_login');
     }
 }

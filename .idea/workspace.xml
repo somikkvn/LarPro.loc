@@ -13,15 +13,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83a39249-d6e5-47b1-90c5-cc4f3b5b5151" name="Default Changelist" comment="LarPro.loc 30.09.20">
-      <change afterPath="$PROJECT_DIR$/resources/views/seed.blade.php" afterDir="false" />
+    <list default="true" id="83a39249-d6e5-47b1-90c5-cc4f3b5b5151" name="Default Changelist" comment="LarPro.loc 02.10.20">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_26_09_2020_14_21_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_26_09_2020_14_21__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_26_09_2020_14_24_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_26_09_2020_14_24__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_26_09_2020_14_26_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_26_09_2020_14_26__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SeedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SeedController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Seed.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Seed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AxiosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AxiosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Axios_LoginComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Axios_LoginComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/modal/LoginAjax.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/modal/LoginAjax.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/parts/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/parts/NavbarComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/axios_login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/axios_login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -228,7 +237,12 @@
       <workItem from="1601621736606" duration="131000" />
       <workItem from="1601624529772" duration="410000" />
       <workItem from="1601625288292" duration="438000" />
-      <workItem from="1601625929481" duration="7869000" />
+      <workItem from="1601625929481" duration="10979000" />
+      <workItem from="1601637973608" duration="12278000" />
+      <workItem from="1601658508577" duration="12572000" />
+      <workItem from="1601707568527" duration="4634000" />
+      <workItem from="1601752898373" duration="3103000" />
+      <workItem from="1601880364469" duration="11468000" />
     </task>
     <task id="LOCAL-00001" summary="LarPro.loc commit1">
       <created>1601018081037</created>
@@ -279,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601475174824</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="LarPro.loc 02.10.20">
+      <created>1601634515511</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601634515511</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +329,8 @@
     <MESSAGE value="LarPro.loc 27.09.20 Jwt_token" />
     <MESSAGE value="LarPro.loc 29.09.20" />
     <MESSAGE value="LarPro.loc 30.09.20" />
-    <option name="LAST_COMMIT_MESSAGE" value="LarPro.loc 30.09.20" />
+    <MESSAGE value="LarPro.loc 02.10.20" />
+    <option name="LAST_COMMIT_MESSAGE" value="LarPro.loc 02.10.20" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1601328020847">
@@ -359,18 +381,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1601226514381" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1601475179945">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1601634521695">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601475179945" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601634521695" />
     <state x="348" y="73" width="585" height="534" key="find.popup" timestamp="1601474784882">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="348" y="73" width="585" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1601474784882" />
-    <state x="443" y="247" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601135572642">
+    <state x="443" y="247" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601634477277">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="443" y="247" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601135572642" />
+    <state x="443" y="247" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601634477277" />
     <state x="441" y="235" key="git4idea.ui.GitResetDialog" timestamp="1601017722741">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

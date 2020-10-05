@@ -1998,9 +1998,56 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
-    return {};
+    return {
+      email: '',
+      password: '',
+      response: '',
+      success: ''
+    };
+  },
+  methods: {
+    submitForm: function submitForm() {
+      var _this = this;
+
+      axios.post('/api/auth/login', {
+        email: this.email,
+        password: this.password
+      }).then(function (response) {
+        console.log(response);
+
+        function setCookie(cname, cvalue) {
+          document.cookie = cname + "=" + cvalue + ";";
+        }
+
+        setCookie("Bearer", response.data.access_token); // document.cookie = ("Bearer-token", [response.data.access_token]);
+        // this.success = 'Data saved successfully';
+        // this.response = JSON.stringify(response, null, 2)
+      })["catch"](function (error) {
+        _this.response = 'Error: ' + error.response.status;
+      });
+      this.email = '';
+      this.password = '';
+    }
   }
 });
 
@@ -2230,37 +2277,51 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      posts: [],
-      post: {
-        id: '',
-        title: '',
-        description: ''
-      },
-      post_id: '',
-      pagination: {},
-      edit: false,
-      loading: true,
-      errored: false
+      userID: 1,
+      name: '',
+      email: '',
+      response: '',
+      success: '',
+      activeClass: 'active'
     };
   },
-  mounted: function mounted() {
-    this.getPosts();
-  },
   methods: {
-    getPosts: function getPosts() {
+    submitForm: function submitForm() {
       var _this = this;
 
-      axios.get('api/post').then(function (response) {
-        return _this.posts = response.data.data;
+      axios.post('api/post', {
+        userID: this.userID,
+        name: this.name,
+        email: this.email
+      }).then(function (response) {
+        // console.log(response);
+        // this.response = response.data
+        _this.success = 'Data saved successfully';
+        _this.response = JSON.stringify(response, null, 2);
       })["catch"](function (error) {
-        console.log(error);
-        _this.errored = true;
-      })["finally"](function () {
-        return _this.loading = false;
+        _this.response = 'Error: ' + error.response.status;
       });
+      this.name = '';
+      this.email = '';
     }
   }
 });
@@ -39808,7 +39869,82 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Login")])
+  return _c("div", { attrs: { id: "app" } }, [
+    _c(
+      "form",
+      {
+        on: {
+          submit: function($event) {
+            $event.preventDefault()
+            return _vm.submitForm($event)
+          }
+        }
+      },
+      [
+        _c("div", [
+          _c("label", { attrs: { for: "email" } }, [_vm._v("Email:")]),
+          _c("br"),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.email,
+                expression: "email"
+              }
+            ],
+            attrs: { id: "email", type: "email", required: "" },
+            domProps: { value: _vm.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.email = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("label", { attrs: { for: "password" } }, [_vm._v("Password:")]),
+          _c("br"),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.password,
+                expression: "password"
+              }
+            ],
+            attrs: { id: "password", type: "text", required: "" },
+            domProps: { value: _vm.password },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.password = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div"),
+        _vm._v(" "),
+        _c("button", { attrs: { type: "submit" } }, [_vm._v("Submit")]),
+        _vm._v(" "),
+        _c("div", [
+          _vm.success ? _c("p", [_vm._v(" " + _vm._s(_vm.success))]) : _vm._e(),
+          _vm._v(" "),
+          _c("pre", [_vm._v(_vm._s(_vm.response))])
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -40001,7 +40137,82 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "form",
+    {
+      on: {
+        submit: function($event) {
+          $event.preventDefault()
+          return _vm.submitForm($event)
+        }
+      }
+    },
+    [
+      _c("div", [
+        _c("label", { attrs: { for: "name" } }, [_vm._v("Name:")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.name,
+              expression: "name"
+            }
+          ],
+          attrs: { id: "name", type: "text", required: "" },
+          domProps: { value: _vm.name },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.name = $event.target.value
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c("label", { attrs: { for: "email" } }, [_vm._v("Email:")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.email,
+              expression: "email"
+            }
+          ],
+          attrs: { id: "email", type: "email", required: "" },
+          domProps: { value: _vm.email },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.email = $event.target.value
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        { class: [_vm.name ? _vm.activeClass : ""], attrs: { type: "submit" } },
+        [_vm._v("Submit")]
+      ),
+      _vm._v(" "),
+      _c("div", [
+        _c("h3", [_vm._v("Data retrieved from server:")]),
+        _vm._v(" "),
+        _vm.success ? _c("p", [_vm._v(" " + _vm._s(_vm.success))]) : _vm._e()
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -53016,14 +53227,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************************************************!*\
   !*** ./resources/js/components/Axios_LoginComponent.vue ***!
   \**********************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Axios_LoginComponent_vue_vue_type_template_id_53e26108_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Axios_LoginComponent.vue?vue&type=template&id=53e26108&scoped=true& */ "./resources/js/components/Axios_LoginComponent.vue?vue&type=template&id=53e26108&scoped=true&");
 /* harmony import */ var _Axios_LoginComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Axios_LoginComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/Axios_LoginComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Axios_LoginComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Axios_LoginComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -53053,7 +53265,7 @@ component.options.__file = "resources/js/components/Axios_LoginComponent.vue"
 /*!***********************************************************************************!*\
   !*** ./resources/js/components/Axios_LoginComponent.vue?vue&type=script&lang=js& ***!
   \***********************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
